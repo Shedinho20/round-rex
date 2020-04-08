@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
-    <script
-      src="https://kit.fontawesome.com/616addaac2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>RoundRex</title>
-  </head>
-  <body>
-    <div id="backgroud-2">
-      <div class="container">
-        <!-- =========navigation bar========= -->
-        <nav id="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
+  <script src="https://kit.fontawesome.com/616addaac2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>RoundRex</title>
+</head>
+
+<body id="backgroud-2">
+  <div>
+    <div class="container" id="nav">
+      <!-- =========navigation bar========= -->
+      <nav id="navbar">
+        <h1>
+          <img src="./img/logo.svg" alt="logo" class="logo" /> ROUND<span class="span">REX</span>
+        </h1>
+        <ul>
+          <li><a href="index.html" class="span">HOME</a></li>
+          <li><a href="about.html" class="navBTN">ABOUT</a></li>
+          <li><a href="contact.html" class="navBTN">CONTACT</a></li>
+        </ul>
+        <div id="menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+    <ul id="menu-content">
+      <a href="index.html">
+        <li>HOME</li>
+      </a>
+      <a href="about.html">
+        <li>ABOUT</li>
+      </a>
+      <a href="contact.html">
+        <li>CONTACT</li>
+      </a>
+    </ul>
+    <!-- =========Showcase section "MUSIC LIKE YOU HAVE NEVER HEARD BEFORE"========= -->
+    <div class="container-con">
+      <div class="showcase11">
+
+        <div id="innerShowcase-22"></div>
+        <div id="innerShowcase-mob"> </div>
+        <div id="innerShowcase22">
           <h1>
-            <img src="./img/logo.svg" alt="logo" class="logo" /> ROUND<span
-              class="span"
-              >REX</span
-            >
+            <span class="span">MUSIC</span> LIKE YOU HAVE NEVER HEARD BEFORE
           </h1>
-          <ul>
-            <li><a href="index.html" class="span">HOME</a></li>
-            <li><a href="about.html" class="navBTN">ABOUT</a></li>
-            <li><a href="contact.html" class="navBTN">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- =========Showcase section "MUSIC LIKE YOU HAVE NEVER HEARD BEFORE"========= -->
-      <div class="container">
-        <div class="showcase1">
-          <div id="innerShowcase-22"></div>
-          <div id="innerShowcase22">
-            <h1>
-              <span class="span">MUSIC</span> LIKE YOU HAVE NEVER HEARD BEFORE
-            </h1>
-            <a href="#creat" class="btn btn2">CREATE</a>
-          </div>
-          <div id="innerShowcase33">
-            <img src="/src/end/img/art.svg" alt="" />
+          <div id="btn-2">
+            <a href="#creat" class="btn">CREATE</a>
           </div>
         </div>
-        <div id="buttom-rect"></div>
+        <div id="innerShowcase3-mob"></div>
+        <div id="innerShowcase33">
+          <img src="../end/img/art.svg" alt="" />
+        </div>
+      </div>
+      <div id="btn-mobile">
+        <a href="#creat" class="btn">CREATE</a>
+      </div>
+      <div id="innerShowcase-mobile">
+        <img src="../end/img/art.svg" alt="" />
       </div>
     </div>
-  </body>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>

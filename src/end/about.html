@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
-    <script
-      src="https://kit.fontawesome.com/616addaac2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>about us</title>
-  </head>
-  <body>
-    <div id="backgroud">
-      <div class="container">
-        <!-- =========navigation bar======== -->
-        <nav id="navbar">
-          <h1>
-            <img src="./img/logo.svg" alt="logo" class="logo" /> ROUND<span
-              class="span"
-              >REX</span
-            >
-          </h1>
-          <ul>
-            <li><a href="index.html" class="navBTN">HOME</a></li>
-            <li><a href="about.html" class="span">ABOUT</a></li>
-            <li><a href="contact.html" class="navBTN">CONTACT</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
+  <script src="https://kit.fontawesome.com/616addaac2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>about us</title>
+</head>
+
+<body id="backgroud">
+  <div class="container" id="nav">
+    <!-- =========navigation bar======== -->
+    <nav id="navbar">
+      <h1>
+        <img src="./img/logo.svg" alt="logo" class="logo" /> ROUND<span class="span">REX</span>
+      </h1>
+      <ul>
+        <li><a href="index.html" class="navBTN">HOME</a></li>
+        <li><a href="about.html" class="span">ABOUT</a></li>
+        <li><a href="contact.html" class="navBTN">CONTACT</a></li>
+      </ul>
+      <div id="menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <!-- =========Showcase section "We create music"========= -->
-      <div class="showcase">
-        <div id="innerShowcase"></div>
-        <div id="innerShowcase2">
-          <h1>WE CREATE <span class="span">MUSIC</span></h1>
-          <h1>
-            AND ARE D<sup
-              ><i class="fas fa-asterisk span"></i
-              ><i class="fas fa-asterisk span"></i></sup
-            >N
-          </h1>
-          <h1>GOOD AT IT</h1>
-          <a href="#creat" class="btn">CREATE</a>
-        </div>
-        <div id="innerShowcase3"></div>
-      </div>
+    </nav>
+  </div>
+  <ul id="menu-content">
+    <a href="index.html">
+      <li>HOME</li>
+    </a>
+    <a href="about.html">
+      <li>ABOUT</li>
+    </a>
+    <a href="contact.html">
+      <li>CONTACT</li>
+    </a>
+  </ul>
+  <!-- =========Showcase section "We create music"========= -->
+  <div class="showcase">
+    <div id="innerShowcase"></div>
+    <div id="innerShowcase2">
+      <h1>WE CREATE <span class="span">MUSIC</span></h1>
+      <h1>
+        AND ARE D<sup><i class="fas fa-asterisk span"></i><i class="fas fa-asterisk span"></i></sup>N
+      </h1>
+      <h1 id="padd">GOOD AT IT</h1>
     </div>
-  </body>
+    <div id="innerShowcase3"></div>
+  </div>
+  <div id="create-btn">
+    <a href="#creat" class="btn">CREATE</a>
+  </div>
+  <div class="image">
+    <img src="/src/end/img/bg.svg" alt="">
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
