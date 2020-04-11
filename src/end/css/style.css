@@ -217,28 +217,27 @@ nav li a {
 }
 
 #rectCon2 {
-    height: 60%;
+    height: 50%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
 #rectCon1 {
-    height: 60%;
+    height: 50%;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
 .con-form form {
-    height: 60%;
+    /* height: 60%; */
     background-color: #fb6464;
     border-radius: 40px;
-    width: 20%;
-    padding: 0 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    max-width: 500px;
+    padding: 2em 2em;
 }
-
+.form-field {
+    margin-bottom: 2em;
+}
 input {
     width: 100%;
     /* margin-top: 1.5em; */
@@ -282,5 +281,18 @@ input {
 @media (max-width: 430px) {
     html {
         font-size: 8px;
+    }
+}
+@media (min-width: 1900px) {
+    html {
+        font-size: 20px;
+    }
+
+    #rectCon2 {
+        height: 60%;
+    }
+
+    #rectCon1 {
+        height: 60%;
     }
 }
