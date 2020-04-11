@@ -19,7 +19,6 @@ h1 {
 }
 .background {
     background-color: rgb(0, 0, 0);
-    height: 100%;
     background-position: center;
     background-size: cover;
 }
@@ -27,15 +26,29 @@ h1 {
 .background-2 {
     background-image: url(../img/bg.svg);
     background-color: rgb(0, 0, 0);
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.backgroud-3 {
+    background: rgba(0, 0, 0, 0.95);
+    background-image: url("../img/bg-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .container {
     width: 90%;
+    height: 100%;
     margin: 0 auto;
+    padding-top: 4em;
+}
+
+.container-abt {
+    width: 90%;
+    margin: 0 auto;
+    height: 15%;
     padding-top: 4em;
 }
 
@@ -97,8 +110,9 @@ nav li a {
 ============home section 1 */
 .sect1-home {
     display: flex;
-    width: 100%;
-    margin-top: 6%;
+    height: 90%;
+    margin: 0;
+    align-items: center;
 }
 .sect1-home:last-child {
     margin-right: auto;
@@ -127,6 +141,7 @@ nav li a {
     width: 1%;
     border-radius: 20px;
     margin-right: 2%;
+    height: 55%;
     background-color: #fb6464;
 }
 
@@ -187,4 +202,85 @@ nav li a {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+}
+
+/* ==================
+============contact section 1 */
+
+.con-form {
+    display: flex;
+    height: 80%;
+    /* background-color: honeydew; */
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#rectCon2 {
+    height: 60%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#rectCon1 {
+    height: 60%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.con-form form {
+    height: 60%;
+    background-color: #fb6464;
+    border-radius: 40px;
+    width: 20%;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 100%;
+    /* margin-top: 1.5em; */
+    padding: 1.5em 2em;
+    font-size: 0.8rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.message textarea {
+    color: white;
+    width: 100%;
+    font-size: 0.8rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    /* margin-top: 1.5em; */
+    padding: 1rem 1.5rem;
+    resize: none;
+}
+#contact {
+    text-align: center;
+    /* margin-top: 5%; */
+}
+
+#btn-con {
+    background: rgba(0, 0, 0, 0.808);
+    padding: 1em 2em;
+    font-weight: 500;
+}
+.input-outline:focus {
+    outline: none;
+    color: white;
+}
+
+.input-outline::placeholder {
+    color: white;
+}
+
+@media (max-width: 430px) {
+    html {
+        font-size: 8px;
+    }
 }
