@@ -126,11 +126,13 @@ nav li a {
   width: 70%;
 }
 
-.text-home {
+.left {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: relative;
+}
+
+.text-home {
+  margin-left: 40px;
 }
 .text-home h1 {
   font-size: 5vw;
@@ -138,11 +140,11 @@ nav li a {
 }
 
 .rect-long {
-  width: 1%;
+  width: 15px;
   border-radius: 20px;
-  margin-right: 2%;
-  height: 55%;
+  height: 100%;
   background-color: #fb6464;
+  position: absolute;
 }
 
 #btn-home {
