@@ -1,7 +1,7 @@
 const menu = document.getElementById("menu");
-const menuContent = document.getElementById("menu-content");
+const menuContent = document.getElementById("menu-BTN");
 const nav = document.getElementById("nav");
-menu.addEventListener("click", e => {
+menu.addEventListener("click", (e) => {
     setTimeout(() => {
         nav.classList.toggle("open");
     }, 0.1);

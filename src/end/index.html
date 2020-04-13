@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
-  </head>
-  <body class="background">
-    <div class="container">
-      <nav>
-        <div id="navbar-right">
-          <img src="./img/logo.svg" alt="logo" />
-          <h1>ROUND<span class="span">REX</span></h1>
-        </div>
-        <div>
-          <ul>
-            <li><a href="index.html" class="span">HOME</a></li>
-            <li>
-              <a href="about.html" class="navBTN">ABOUT</a>
-            </li>
-            <li>
-              <a href="contact.html" class="navBT">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="sect1-home">
-        <div class="left">
-          <div class="rect-long"></div>
-          <div class="text-home">
-            <h1>
-              <span class="span">MUSIC</span> LIKE YOU HAVE NEVER HEARD BEFORE
-            </h1>
-            <div id="btn-home">
-              <button class="btn">CREATE</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body class="background">
+        <div class="container">
+            <nav id="nav">
+                <div id="navbar-right">
+                    <img src="./img/logo.svg" alt="logo" />
+                    <h1>ROUND<span class="span">REX</span></h1>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="index.html" class="span">HOME</a></li>
+                        <li>
+                            <a href="about.html" class="navBTN">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navBT">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <div class="hamBurger line1"></div>
+                    <div class="hamBurger line2"></div>
+                    <div class="hamBurger line3"></div>
+                </div>
+            </nav>
+            <ul id="menu-BTN">
+                <a href="index.html"><li>HOME</li> </a>
+                <a href="about.html"><li>ABOUT</li> </a>
+                <a href="contact.html"><li>CONTACT</li> </a>
+            </ul>
+            <section id="home-mob">
+                <div class="rect-abt" id="rectAbt1"></div>
+                <h1><span class="span">MUSIC</span> LIKE YOU HAVE NEVER HEARD BEFORE</h1>
+                <div class="rect-abt" id="rectAbt2"></div>
+            </section>
+            <div id="btn-mob">
+                <button class="btn">CREATE</button>
             </div>
-          </div>
+            <section class="sect1-home">
+                <div class="left">
+                    <div class="rect-long"></div>
+                    <div class="text-home">
+                        <h1><span class="span">MUSIC</span> LIKE YOU HAVE NEVER HEARD BEFORE</h1>
+                        <div id="btn-home">
+                            <button class="btn">CREATE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-home"><img src="../end/img/art.svg" alt="" /></div>
+            </section>
+            <div id="rectBottom-home"></div>
         </div>
-        <div class="img-home"><img src="../end/img/art.svg" alt="" /></div>
-      </section>
-      <div id="rectBottom-home"></div>
-    </div>
-  </body>
+    </body>
+    <script src="main.js"></script>
 </html>
