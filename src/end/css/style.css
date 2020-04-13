@@ -178,6 +178,7 @@ nav li a {
 .sect1-abt {
     display: flex;
     margin-top: 5%;
+    /* background-color: whitesmoke; */
     justify-content: space-between;
 }
 
@@ -222,28 +223,35 @@ nav li a {
 .con-form {
     display: flex;
     height: 80%;
-    justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+}
+#con {
+    display: flex;
+    width: 100%;
+    position: relative;
 }
 
 #rectCon2 {
-    height: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
 #rectCon1 {
-    height: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
 .con-form form {
-    /* height: 60%; */
     background-color: #fb6464;
     border-radius: 40px;
     max-width: 500px;
+    margin: 0 auto;
     padding: 2em 2em;
 }
 .form-field {
@@ -293,14 +301,6 @@ input {
 @media (min-width: 1900px) {
     html {
         font-size: 20px;
-    }
-
-    #rectCon2 {
-        height: 60%;
-    }
-
-    #rectCon1 {
-        height: 60%;
     }
 }
 
@@ -430,14 +430,6 @@ input {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-    }
-
-    #rectCon2 {
-        height: 45%;
-    }
-
-    #rectCon1 {
-        height: 45%;
     }
 
     .con-form form {
