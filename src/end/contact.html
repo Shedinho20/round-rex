@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RoundRex: UI/UX Design/Dev Project" />
-    <script
-      src="https://kit.fontawesome.com/616addaac2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>contact us</title>
-  </head>
-  <body>
-    <div id="backgroud-contact">
-      <div class="container">
-        <!-- ========= navigation bar ========= -->
-        <nav id="navbar">
-          <h1>
-            <img src="./img/logo.svg" alt="logo" class="logo" /> ROUND<span
-              class="span"
-              >REX</span
-            >
-          </h1>
-          <ul>
-            <li><a href="index.html" class="navBTN">HOME</a></li>
-            <li><a href="about.html" class="navBTN" >ABOUT</a></li>
-            <li><a href="contact.html"class="span">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- =========contact form========= -->
-      <div class="showcase">
-        <div id="innerShowcase">  </div>
-        <div id="innerShowcase-2">
-          <form>
-            <div class = "form-field">
-              <input type="text" name="firstName" id="first-name" placeholder="Firstname" class = "input-outline"/>
-            </div>
-            <div class = "form-field">
-              <input type="email" name="email" id="email" placeholder="E-mail" class = "input-outline"/>
-            </div>
-            <div class = "form-field message"> 
-              <textarea name="text" id="message" cols="30" rows="10" class = "input-outline">Message</textarea>
-            </div>
-            <div id="contact">
-              <button  id="btn-contact">CONTACT US</button>
-            </div>
-          </form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body class="backgroud-3">
+        <div class="container-abt">
+            <nav>
+                <div id="navbar-right">
+                    <img src="./img/logo.svg" alt="logo" />
+                    <h1>ROUND<span class="span">REX</span></h1>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="span">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <div class="hamBurger line1"></div>
+                    <div class="hamBurger line2"></div>
+                    <div class="hamBurger line3"></div>
+                </div>
+            </nav>
+            <ul id="menu-BTN">
+                <a href="index.html"><li>HOME</li> </a>
+                <a href="about.html"><li>ABOUT</li> </a>
+                <a href="contact.html"><li>CONTACT</li> </a>
+            </ul>
         </div>
-        <div id="innerShowcase3"></div>
-    </div>
-    <div id="buttom-rect"></div>
-  </body>
+        <section class="con-form">
+            <div id="con">
+                <div class="rect-abt" id="rectCon1"></div>
+                <form action="#">
+                    <div class="form-field">
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="first-name"
+                            placeholder="Firstname"
+                            class="input-outline"
+                        />
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="email" id="email" placeholder="E-mail" class="input-outline" />
+                    </div>
+                    <div class="form-field message">
+                        <textarea name="text" id="message" cols="30" rows="10" class="input-outline">Message</textarea>
+                    </div>
+                    <div id="contact">
+                        <button class="btn" id="btn-con">CONTACT US</button>
+                    </div>
+                </form>
+                <div class="rect-abt" id="rectCon2"></div>
+            </div>
+        </section>
+        <div id="rectBottom-home"></div>
+    </body>
+    <script src="main.js"></script>
 </html>
